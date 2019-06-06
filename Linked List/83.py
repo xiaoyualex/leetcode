@@ -14,5 +14,6 @@ class Solution(object):
         while cur:
             while cur.next and cur.next.val == cur.val:
                 cur.next = cur.next.next     # skip duplicated node
-            cur = cur.next     
+            cur = cur.next    
+        return head 
       
